@@ -424,10 +424,10 @@
         async function copyResult(event) {
             const viewer = document.getElementById('resultViewer');
             const text = viewer.innerText;
-            if (!text) { showSnack("Chưa có gì để copy đâu!"); return; }
+            if (!text) { showSnack("Chưa có gì để copy đâu."); return; }
             try {
                 await navigator.clipboard.writeText(text);
-                showSnack("Đã chép vào bộ nhớ tạm! ⚡");
+                showSnack("Đã copy vào bảng tạm!");
             } catch (err) {
                 const el = document.createElement('textarea');
                 el.value = text; document.body.appendChild(el); el.select();
