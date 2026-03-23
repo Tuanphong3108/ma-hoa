@@ -366,7 +366,7 @@
             const viewer = document.getElementById('resultViewer');
             const loader = document.getElementById('loading-overlay');
 
-            if (!text) { showSnack("Bro nhập gì đó đi chứ 💀"); return; }
+            if (!text) { showSnack("Hãy nhập gì đó để tiếp tục"); return; }
 
             loader.style.display = 'flex';
             const dynamicDelay = Math.min(Math.max(text.length * 1.5, 300), 1200);
@@ -403,7 +403,7 @@
             createRipple(event);
             const text = document.getElementById('inputText').value.trim();
             const viewer = document.getElementById('resultViewer');
-            if (!text) { showSnack("Nhập nội dung để Brute Force bro!"); return; }
+            if (!text) { showSnack("Nhập nội dung để thử toàn bộ trường hợp!"); return; }
 
             document.getElementById('loading-overlay').style.display = 'flex';
             await new Promise(r => setTimeout(r, 800));
